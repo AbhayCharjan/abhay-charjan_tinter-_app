@@ -22,7 +22,7 @@ Std_b = st.number_input("Standard b")
 if st.button("Predict"):
     dL = Std_L - L
     da = Std_a - a
-    db = Std_B - b
+    db = Std_b - b
     X = np.array([[L,a,b,Std_L,Std_a,Std_B,dL,da,db]])
     Xs = scaler.transform(X)
     ypred = model.predict(Xs)[0]
